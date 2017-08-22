@@ -1,0 +1,40 @@
+body {
+  padding: 1rem;
+}
+
+main .wrapper {
+  width: 100%;
+  background-color: grey;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      position: relative;
+      margin: .5rem;
+      width: 100%;
+      div {
+        img {
+          width: 1rem;
+        }
+      }
+      .thisImage {
+        width: 100%;
+      }
+    }
+  }
+}
+.popUp {
+}
+.userName,
+.imgLikes {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  padding-left: .5rem;
+  bottom: 2.5rem;
+}
+.imgLikes {
+  bottom: 1rem;
+}
