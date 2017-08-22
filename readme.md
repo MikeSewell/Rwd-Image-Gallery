@@ -10,4 +10,4 @@ to run this project you must first download all files in this repository. Copy t
 ### Last Updated
 22 AUG 2017 1700ET
 ### Link to Project
-https://mikesewell.github.io/MarvelSearchMobile/
+https://mikesewell.github.io/Rwd-Image-Gallery/
