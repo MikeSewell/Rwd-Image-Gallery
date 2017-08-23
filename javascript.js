@@ -1,7 +1,17 @@
 // load page first
 window.addEventListener("load", () => {
-  // getImages()
   apiCall()
+
+  // let list = document.querySelector("li")
+  // console.log(list)
+  // list.addEventListener("onmouseover", e => {
+  //   console.log(e)
+  // })
+
+  // list.forEach(function(list) {
+  //   list.addEventListener("click", e => {
+  //     console.log(e)
+  //   })
 })
 
 // Api call
@@ -23,15 +33,14 @@ function getImages(a) {
   const imageList = document.querySelector(".imageList")
   a.results.forEach(element => {
     const { urls, user, likes } = element
-    console.log(urls.small)
-    console.log(urls.full)
+
     let imaUrl = urls.small
     let insert = `
-      <li>
+      <li class="showCats">
       <img class="thisImage" src="${urls.small}" alt="Cute cat"
-        srcset="${urls.small} 200w, ${urls.regular} 400w, ${urls.full} 1080w"/>
+        srcset="${urls.small} 400w, ${urls.regular} 1080w, ${urls.full} 2560w"/>
 
-        <div class="back">
+        <div class="show">
             <div class="userName">
             <img src=${"./images/user-icon.svg"}>
             <p>${user.name}</p>

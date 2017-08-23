@@ -13,6 +13,10 @@ main .wrapper {
       position: relative;
       margin: .5rem;
       width: 100%;
+      overflow: hidden;
+      p {
+        padding-left: .3rem;
+      }
       div {
         img {
           width: 1rem;
@@ -30,11 +34,25 @@ main .wrapper {
 .imgLikes {
   display: flex;
   align-items: center;
-  position: absolute;
   color: #fff;
   padding-left: .5rem;
-  bottom: 2.5rem;
 }
 .imgLikes {
-  bottom: 1rem;
+  padding-top: 1rem;
+}
+.show {
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  transition: .5s ease;
+  bottom: -5rem;
+}
+.showCats:hover .show {
+  bottom: 3px;
+}
+@media (min-width: 500px) {
+  // ul {
+  //   flex-direction: row;
+  // }
 }
