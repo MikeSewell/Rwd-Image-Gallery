@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
 // Api call
 function apiCall() {
   const searchString =
-    "https://api.unsplash.com/search/photos/?query=cats&client_id=1382cda710cbbcf8082e24214cfd34d633a9572e3db9541f2a3219dfa0b47e6c"
+    "https://api.unsplash.com/search/photos/?query=cats&per_page=9&client_id=1382cda710cbbcf8082e24214cfd34d633a9572e3db9541f2a3219dfa0b47e6c"
   const xhr = new XMLHttpRequest()
   xhr.open("GET", searchString, true)
   xhr.onload = () => {

@@ -8,6 +8,6 @@
 this project what setup with SASS and Gulp tasks
 to run this project you must first download all files in this repository. Copy the path of the index.html file then paste that in safari to view the page.
 ### Last Updated
-22 AUG 2017 1700ET
+22 AUG 2133 1700ET
 ### Link to Project
 https://mikesewell.github.io/Rwd-Image-Gallery/
