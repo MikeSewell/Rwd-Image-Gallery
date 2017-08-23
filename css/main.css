@@ -135,7 +135,7 @@ header {
     margin: 1rem;
     font-size: 1.5rem;
     order: 2; }
-  header img {
+  header .blackCat {
     margin-top: 2rem;
     width: 10%;
     order: 1; }
@@ -151,9 +151,9 @@ header {
 
 @keyframes moveCat {
   0% {
-    transform: translate(undefined, -14px); }
+    transform: translate(0, -14px); }
   3% {
-    transform: translate(undefined, -14px); }
+    transform: translate(0, -14px); }
   5% {
     transform: translate(17px, -47px); }
   12% {
@@ -165,7 +165,7 @@ header {
   38% {
     transform: translate(-110px, 4px) rotate(2480deg); }
   47% {
-    transform: translate(-29px, -32px) rotate(NaNdeg) scaleX(1.01); }
+    transform: translate(-29px, -32px) scaleX(1.01); }
   53% {
     transform: translate(-29px, -32px) rotate(1879deg); }
   60% {
