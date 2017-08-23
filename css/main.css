@@ -144,6 +144,35 @@ header {
     color: #6a6a6a;
     order: 3; }
 
+.move {
+  animation: moveCat linear 2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%; }
+
+@keyframes moveCat {
+  0% {
+    transform: translate(undefined, -14px); }
+  3% {
+    transform: translate(undefined, -14px); }
+  5% {
+    transform: translate(17px, -47px); }
+  12% {
+    transform: translate(39px, -1px) rotate(360deg); }
+  19% {
+    transform: translate(-45px, -100px) rotate(3240deg); }
+  29% {
+    transform: translate(-31px, -102px) rotate(2836deg); }
+  38% {
+    transform: translate(-110px, 4px) rotate(2480deg); }
+  47% {
+    transform: translate(-29px, -32px) rotate(NaNdeg) scaleX(1.01); }
+  53% {
+    transform: translate(-29px, -32px) rotate(1879deg); }
+  60% {
+    transform: translate(-29px, -32px) rotate(1601deg); }
+  100% {
+    transform: translate(-19px, -14px) rotate(1deg) scaleX(1.01); } }
+
 footer {
   display: flex;
   justify-content: center;

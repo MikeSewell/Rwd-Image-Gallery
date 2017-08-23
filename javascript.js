@@ -1,17 +1,15 @@
 // load page first
 window.addEventListener("load", () => {
+  const bigCat = document.querySelector(".blackCat")
   apiCall()
-
-  // let list = document.querySelector("li")
-  // console.log(list)
-  // list.addEventListener("onmouseover", e => {
-  //   console.log(e)
-  // })
-
-  // list.forEach(function(list) {
-  //   list.addEventListener("click", e => {
-  //     console.log(e)
-  //   })
+  bigCat.addEventListener("click", e => {
+    const meow = new Audio("Angry-cat.mp3")
+    bigCat.classList.toggle("move")
+    setTimeout(() => {
+      bigCat.classList.remove("move")
+    }, 2500)
+    meow.play()
+  })
 })
 
 // Api call
@@ -28,7 +26,7 @@ function apiCall() {
   }
   xhr.send(null)
 }
-
+// get the images and populate them
 function getImages(a) {
   const imageList = document.querySelector(".imageList")
   a.results.forEach(element => {
